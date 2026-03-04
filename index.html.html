@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>MINE Center</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1f26, #2c2f3a);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Tiêu đề */
+h1 {
+    font-size: 55px;
+    margin-bottom: 70px;
+    letter-spacing: 4px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    gap: 70px;
+}
+
+/* Card */
+.card {
+    width: 270px;
+    height: 270px;
+    background: #2f3241;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.35s ease;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+}
+
+.card:hover {
+    transform: scale(1.18);
+    background: #3b4060;
+}
+
+/* Icon */
+.icon {
+    font-size: 95px;
+    margin-bottom: 20px;
+}
+
+/* Text */
+.name {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* Fade in */
+body {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+</style>
+</head>
+
+<body>
+
+<h1>MINE Center</h1>
+
+<div class="container">
+
+    <div class="card" onclick="goMinecal()">
+        <div class="icon">🧮</div>
+        <div class="name">MINECAL</div>
+    </div>
+
+    <div class="card" onclick="goMineAi()">
+        <div class="icon">🤖</div>
+        <div class="name">MineAI</div>
+    </div>
+
+</div>
+
+<script>
+function goMinecal() {
+    window.location.href = "file:///C:/Users/DELL/Desktop/MINECAL.html";
+}
+
+function goMineAi() {
+    window.location.href = "file:///C:/Users/DELL/Desktop/MINE%20AI.html";
+}
+</script>
+
+</body>
+</html>
